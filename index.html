@@ -1,117 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-<title>theforestmelody</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>你的網頁標題</title>
+    <style> @-ms-viewport { width: device-width; } </style>
+    
+    <link rel="stylesheet" href="/assets/reset.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="multiple-scenes view-control-buttons">
 
 <div id="introScreen" class="intro">
   <button id="startBtn" class="intro-start-html">開始體驗</button>
 </div>
-
 <div id="pano"></div>
-
 <div id="sceneList">
   <ul class="scenes">
-    
       <a href="javascript:void(0)" class="scene" data-id="0-">
         <li class="text">入口處</li>
       </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-">
-        <li class="text">導覽地圖</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-">
-        <li class="text">沙發區</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-">
-        <li class="text">聲音體驗區</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-">
-        <li class="text">台灣山羌</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-">
-        <li class="text">台灣石虎</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-">
-        <li class="text">腹斑蛙</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="7-">
-        <li class="text">休息區</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="8-">
-        <li class="text">聲音模仿區</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="9--">
-        <li class="text">山林好聲音-擬音師挑戰</li>
-      </a>
-    
-  </ul>
+      </ul>
 </div>
-
 <div id="titleBar">
   <h1 class="sceneName"></h1>
 </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
-
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
-
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
-
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
-
-<!-- 圖片 Modal（置中顯示） -->
 <div id="imgModal" class="img-modal" aria-hidden="true">
   <button id="imgModalClose" class="img-modal-close" aria-label="關閉">✕</button>
   <img id="imgModalImg" class="img-modal-img" alt="">
 </div>
 
-<script src="./vendor/screenfull.min.js" ></script>
-<script src="./vendor/bowser.min.js" ></script>
-<script src="./vendor/marzipano.js" ></script>
+<script src="/assets/screenfull.min.js"></script>
+<script src="/assets/bowser.min.js"></script>
+<script src="/assets/marzipano.js"></script>
 
-<script src="data.js"></script>
-<script src="index.js"></script>
+<script src="./data.js"></script>
+<script src="./index.js"></script>
 
 </body>
 </html>
